@@ -1,0 +1,5639 @@
+{
+  "docs": [
+    {
+      "doc": "default",
+      "fields": [
+        {
+          "field": "default",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Stopped",
+          "store": "yes",
+          "index": "yes"
+        },
+        {
+          "field": "_mob_id",
+          "store": "yes",
+          "index": "yes"
+        },
+        {
+          "field": "Product",
+          "store": "yes",
+          "index": "yes"
+        },
+        {
+          "field": "Category",
+          "store": "yes",
+          "index": "yes"
+        },
+        {
+          "field": "Counter",
+          "store": "yes",
+          "index": "yes"
+        },
+        {
+          "field": "Instance",
+          "store": "yes",
+          "index": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Collect.VW_TST_PerformanceCounters",
+      "fields": [
+        {
+          "field": "Category",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Counter",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Instance",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Value",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Status",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "IsInternal",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "DateTime",
+          "type": "datetime",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Collect.VW_TST_Ping",
+      "fields": [
+        {
+          "field": "Category",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Counter",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Value",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Status",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VM_TST_DBMILimitingFeatures",
+      "fields": [
+        {
+          "field": "EntityId",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Entityname",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "EntityChildID",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "EntityChildName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "LimitedF",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "EntityValue",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_ActiveSQLTraceFlag",
+      "fields": [
+        {
+          "field": "TraceFlag",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Status",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "Global",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "Session",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_AIXCPUStats",
+      "fields": [
+        {
+          "field": "Column1",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Column2",
+          "type": "decimal",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_AIXIOStat",
+      "fields": [
+        {
+          "field": "Column1",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Column4",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Column5",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Column6",
+          "type": "decimal",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_AIXNetstat",
+      "fields": [
+        {
+          "field": "Output",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_AIXProcessors",
+      "fields": [
+        {
+          "field": "Processor Type",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Processor Implementation Mode",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Processor Version",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Number Of Processors",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Processor Clock Speed",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Model Implementation",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_AIXSVMon",
+      "fields": [
+        {
+          "field": "Column1",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "size",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "free",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_Alert_Log_File_Check",
+      "fields": [
+        {
+          "field": "ErrorNumber",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_ApplicationConnections",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "HostName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ProgramName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "LoginName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IPAddress",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_ArchiveLogsBackupCheck",
+      "fields": [
+        {
+          "field": "MSG",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Status",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_AutoFileSizeChangeEvents",
+      "fields": [
+        {
+          "field": "EventClass",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "DatabaseFilename",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "StartTime",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "EndTime",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "DurationMS",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "ChangeInSizeMB",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_AvailabilityGroupHealth",
+      "fields": [
+        {
+          "field": "LastHardenedLSN",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "GROUPID",
+          "type": "uniqueidentifier",
+          "store": "yes"
+        },
+        {
+          "field": "ReplicaID",
+          "type": "uniqueidentifier",
+          "store": "yes"
+        },
+        {
+          "field": "GroupDBID",
+          "type": "uniqueidentifier",
+          "store": "yes"
+        },
+        {
+          "field": "ReplicaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ReplicaRole",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "ReplicaRoleDesc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SyncStateDesc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IsLocal",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsPrimaryReplica",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "SyncState",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "SyncHealthDesc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "LastHardenedTime",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "LastRedoneTime",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "LogSendQueueSize",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "LogSendRate",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "RedoQueueSize",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "RedoRate",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "FilestreamSendRate",
+          "type": "bigint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_BackupLocations",
+      "fields": [
+        {
+          "field": "database_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Location",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "LastUsed",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "LastBackupSetID",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_BaseSQLcollection",
+      "fields": [
+        {
+          "field": "InstanceName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ProductVersion",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "VersionName",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "VersionNumber",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Edition",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_ConnectedIPCClasses",
+      "fields": [
+        {
+          "field": "CClass",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_DatabaseAvgGrowthByBackupSize",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "AvgGrowthPerDayMB",
+          "type": "decimal",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_DatabaseFeatureCrawl",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Partitioning",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "FullTextIndexes",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "DataCompression",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "Auditing",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "FileStreamData",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "FiltredIndexes",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "ChangeTracking",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "MemoryOptimizedOLTP",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "MergeReplicationWithInfiniteRetention",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_DatabaseFilegroups",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "type",
+          "type": "char",
+          "store": "yes"
+        },
+        {
+          "field": "is_default",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_read_only",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_DatabaseFiles",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "file_id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "FileName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "type_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "physical_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "state_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SizeMB",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "SpaceUsedMB",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "UsedPercentage",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "MaxSizeMB",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "GrowthMB",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "GrowthPercent",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "is_read_only",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "FileGroupName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "CurrentSecondary",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_DatabaseFilesIO",
+      "fields": [
+        {
+          "field": "InstanceName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "NumOfReads",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "NumOfBytesRead",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "ReadLatency",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "NumOfWrites",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "NumOfBytesWritten",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "WriteLatency",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "NumOfTransfers",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "NumOfBytesTransfered",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "Latency",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "MillisecondsBetweenCollections",
+          "type": "bigint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_DatabaseInstanceDetails",
+      "fields": [
+        {
+          "field": "Collation",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Edition",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Architecture",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "InstanceName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IsClustered",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsFullTextInstalled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsIntegratedSecurityOnly",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "ProductLevel",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IsSingleUser",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "LastRestartDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "OldestBackupHistory",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "OldestJobHistory",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "CurrentErrorLogStartDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "IsServerNameNull",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsServerNameWrong",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Port",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "DynamicPort",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsTcpEnabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsNamedPipesEnabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsViaEnabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "FilestreamEffectiveLevel",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "AllowLockPagesInMemory",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsSystemHealthSessionRunning",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsResourceGovernorEnabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "LogonTriggers",
+          "type": "smallint",
+          "store": "yes"
+        },
+        {
+          "field": "NumberOfAvailableSchedulers",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_DatabaseInstanceSimpleQueryResponseTime",
+      "fields": [
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_DatabaseMailFailures",
+      "fields": [
+        {
+          "field": "log_id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "FirstDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "LastDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "EventCount",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "description",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "recipients",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "send_request_user",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "sent_account_id",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_DatabasePrincipals",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "PrincipalName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "PrincipalType",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "DefaultSchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "LoginName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IsOrphan",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "HasConnectPermissions",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "HasPermissions",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "HasDirectTablePermissions",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "HasControlDatabase",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsMemberOfUserRoles",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsDBOwner",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsAccessAdmin",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsSecurityAdmin",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsDDLAdmin",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsBackupOperator",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsDataReader",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsDataWriter",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsDenydataReader",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsDenyDataWriter",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_DBCCCheckDB",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectType",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "DatabaseFileName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Error",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "ErrorLevel",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "RepairLevel",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "AffectedPagesCount",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Errors",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "ExampleMessage",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_DBInstance_Portfolio_Assessment",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectType",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectCount",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_Deadlocks",
+      "fields": [
+        {
+          "field": "EventDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "DeadLockGraph",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ServerDate",
+          "type": "datetime",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_DroppedDatabases",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "HostName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ApplicationName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "LoginName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "StartTime",
+          "type": "datetime",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_DTSPackages",
+      "fields": [
+        {
+          "field": "PackageName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "CreateDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "IsPartOfAnActiveJob",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_EncryptionObjects",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "EncryptionObjectType",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "key_length",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "algorithm_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "provider_type",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ProviderAlgorithmID",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "EncryptionType",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "EncyptionByObjects",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IsUsedForSigningModules",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "is_active_for_begin_dialog",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "CertificateSubject",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "CertificateStartDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "CertificateExpiryDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "pvt_key_last_backup_date",
+          "type": "datetime",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_FailedJobs",
+      "fields": [
+        {
+          "field": "JobName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "StepName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "FirstFailureDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "LastFailureDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "FailureCount",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "LastErrorMessage",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "FirstSuccessDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "LastSuccessDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "SuccessCount",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "MaxInstanceID",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_FragmentedIndexes",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectType",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IndexID",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IndexType",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "IndexName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "PartitionNumber",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "AllocationUnitType",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "index_depth",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "avg_fragmentation_in_percent",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "avg_page_space_used_in_percent",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "ghost_record_count",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "min_record_size_in_bytes",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "max_record_size_in_bytes",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "avg_record_size_in_bytes",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "forwarded_record_count",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "compressed_page_count",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "NumberOfRows",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "SizeMB",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "fill_factor",
+          "type": "tinyint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_FullBackupsCheck",
+      "fields": [
+        {
+          "field": "Msg",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Status",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_FullTextCatalogs",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "CatalogName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "CatalogPath",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IsDefault",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsAccentSensitivityOn",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "DataSpaceName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "CatalogFileName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "LastPopulationDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "IndexSizeMB",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "ItemCount",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "PopulateStatus",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_InMemoryIssues",
+      "fields": [
+        {
+          "field": "DbName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "TableName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "FactorName",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "IssueCount",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_InMemoryPerformance",
+      "fields": [
+        {
+          "field": "DBName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "TableName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_Leaf_Insert_Count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_Leaf_Delete_Count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_Leaf_update_count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_NonLeaf_insert_count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_NonLeaf_delete_count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_NonLeaf_update_count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_range_scan_count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_singleton_lookup_count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_row_lock_count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_row_lock_Wait_Count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_row_lock_Wait_in_MS",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_page_lock_count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_page_lock_Wait_count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_Page_Lock_Wait_in_MS",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_Page_latch_Wait_count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_Page_Latch_Wait_in_MS",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_page_IO_Latch_Wait_Count",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Sum_page_io_latch_Wait_in_ms",
+          "type": "decimal",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_InstalledPatches",
+      "fields": [
+        {
+          "field": "Caption",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Description",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "HotFixID",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "InstalledOn",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "ServicePackInEffect",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Status",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_InstanceAlerts",
+      "fields": [
+        {
+          "field": "name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "event_source",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "event_category_id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "event_id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "message_id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "language_id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "is_event_logged",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "Message_Description",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Severity",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "enabled",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "delay_between_responses",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "last_occurrence_date",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "last_occurrence_time",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "last_response_date",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "last_response_time",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "notification_message",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "include_event_description",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "database_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "event_description_keyword",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "occurrence_count",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "count_reset_date",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "count_reset_time",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "job_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "has_notification",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "flags",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "performance_condition",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "category_id",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_InstanceAudits",
+      "fields": [
+        {
+          "field": "name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "create_date",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "modify_date",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "type_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "on_failure_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_state_enabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "queue_delay",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "status_time",
+          "type": "datetime2",
+          "store": "yes"
+        },
+        {
+          "field": "status_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_InstanceConfigurations",
+      "fields": [
+        {
+          "field": "name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "run_value",
+          "type": "sql_variant",
+          "store": "yes"
+        },
+        {
+          "field": "is_advanced",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "config_value",
+          "type": "sql_variant",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_InstanceCredential",
+      "fields": [
+        {
+          "field": "name",
+          "type": "sysname",
+          "store": "yes"
+        },
+        {
+          "field": "credential_identity",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "create_date",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "modify_date",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "target_type",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "target_id",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_InstanceDatabases",
+      "fields": [
+        {
+          "field": "name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "create_date",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "compatibility_level",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "collation_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_read_only",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_auto_close_on",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_auto_shrink_on",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "state_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_in_standby",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "snapshot_isolation_state",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "is_read_committed_snapshot_on",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "recovery_model_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "page_verify_option_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_auto_create_stats_on",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_auto_update_stats_on",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_auto_update_stats_async_on",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_recursive_triggers_on",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_trustworthy_on",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_db_chaining_on",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_parameterization_forced",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_published",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_subscribed",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_merge_published",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_distributor",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_broker_enabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "log_reuse_wait_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_cdc_enabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_encrypted",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "AvgFullBackupInterval",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "AvgLogBackupInterval",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "user_access",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "SourceDatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "OwnerLogin",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_date_correlation_on",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "LastFullBackupDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "AvgBackupCompressionRatio",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "LastLogBackupDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "LastUsageDate",
+          "type": "datetime",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_InstanceEndPoints",
+      "fields": [
+        {
+          "field": "name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "OwnerLogin",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "protocol_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "type_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "state_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_admin_endpoint",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_InstanceLogins",
+      "fields": [
+        {
+          "field": "name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "sid",
+          "type": "varbinary",
+          "store": "yes"
+        },
+        {
+          "field": "type_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_disabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "create_date",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "modify_date",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "default_database_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "default_language_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IsSysAdmin",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsSecurityAdmin",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsServerdmin",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsSetupAdmin",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsProcessAdmin",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsDiskAdmin",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsDBCreator",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsBulkAdmin",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "password_hash",
+          "type": "varbinary",
+          "store": "yes"
+        },
+        {
+          "field": "HasControlServer",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsLocked",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_policy_checked",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_InstanceOperators",
+      "fields": [
+        {
+          "field": "name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "enabled",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "email_address",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "last_email_date",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "last_email_time",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "pager_address",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "last_pager_date",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "last_pager_time",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "weekday_pager_start_time",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "weekday_pager_end_time",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "saturday_pager_start_time",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "saturday_pager_end_time",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "sunday_pager_start_time",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "sunday_pager_end_time",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "pager_days",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "netsend_address",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "last_netsend_date",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "last_netsend_time",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "category_id",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_InstanceSuspectPages",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "FileID",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "page_id",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "event_type",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "error_count",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "last_update_date",
+          "type": "datetime",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_InstanceUserMessage",
+      "fields": [
+        {
+          "field": "message_id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "language_id",
+          "type": "smallint",
+          "store": "yes"
+        },
+        {
+          "field": "severity",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "is_event_logged",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "text",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_LimitingFeatureUsage",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "FeatureName",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_LinkedServers",
+      "fields": [
+        {
+          "field": "name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "product",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "provider",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "data_source",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "location",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "provider_string",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "connect_timeout",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "query_timeout",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "catalog",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_rpc_out_enabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_data_access_enabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_collation_compatible",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "uses_remote_collation",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "collation_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "lazy_schema_validation",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_remote_proc_transaction_promotion_enabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "RemoteLogins",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_LinuxLoadAvg",
+      "fields": [
+        {
+          "field": "Column2",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Column4",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_LinuxMemInfo",
+      "fields": [
+        {
+          "field": "MemTotal",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Hugepagesize",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "VmallocTotal",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "MemFree",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Buffers",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Cached",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Active",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Inactive",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "SwapTotal",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "SwapFree",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Dirty",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Writeback",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Committed_AS",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "VmallocChunk",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "HardwareCorrupted",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "HugePages_Total",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "HugePages_Free",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_LinuxOSInformation",
+      "fields": [
+        {
+          "field": "ServerName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Uptime",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Change",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Architecture",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "DomainName",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_LinuxProcessors",
+      "fields": [
+        {
+          "field": "processor",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "vendor_id",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "cpu family",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "model",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "stepping",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "model name",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "flags",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "cpu MHz",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "cache size",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "physical id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "siblings",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "cpu cores",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_LinuxVersion",
+      "fields": [
+        {
+          "field": "Output",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_LogShippingErrors",
+      "fields": [
+        {
+          "field": "log_time_utc",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "database_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "session_status",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "agent_type",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "FirstOccurence",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "LastOccurence",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "NumberOfOccurences",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "ErrorMessage",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_LogShippingInstances",
+      "fields": [
+        {
+          "field": "IsPrimary",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "database_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "opposite_server",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "opposite_database",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "last_backup_date",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "last_copied_date",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "last_restored_date",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "last_restored_latency",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "CurrentDateTime",
+          "type": "datetime",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_MemoryClerks",
+      "fields": [
+        {
+          "field": "InstanceName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "single_pages_mb",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "multi_pages_mb",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "pages_mb",
+          "type": "bigint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_MirroredDatabases",
+      "fields": [
+        {
+          "field": "name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "mirroring_guid",
+          "type": "uniqueidentifier",
+          "store": "yes"
+        },
+        {
+          "field": "mirroring_state",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "mirroring_role",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "mirroring_safety_level",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "mirroring_partner_instance",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "mirroring_witness_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "mirroring_witness_state",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "mirroring_connection_timeout",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "mirroring_redo_queue",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "mirroring_redo_queue_type",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_NetworkInterfaces",
+      "fields": [
+        {
+          "field": "DefaultIPGateway",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Description",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "DHCPEnabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "DHCPServer",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "DNSDomain",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "DNSDomainSuffixSearchOrder",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "DNSServerSearchOrder",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Index",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IPAddress",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "IPSubnet",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "MACAddress",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "TcpipNetbiosOptions",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "TcpWindowSize",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "WINSEnableLMHostsLookup",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_NetworkInterfaceSpeed",
+      "fields": [
+        {
+          "field": "Active",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "InstanceName",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "NdisLinkSpeed",
+          "type": "bigint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_OperatingSystem",
+      "fields": [
+        {
+          "field": "Caption",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "CodeSet",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "CountryCode",
+          "type": "smallint",
+          "store": "yes"
+        },
+        {
+          "field": "CSDVersion",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "CurrentTimeZone",
+          "type": "smallint",
+          "store": "yes"
+        },
+        {
+          "field": "InstallDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "LastBootUpTime",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "Locale",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "MaxProcessMemorySize",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "OSArchitecture",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "OSLanguage",
+          "type": "smallint",
+          "store": "yes"
+        },
+        {
+          "field": "PAEEnabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "ProductType",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "TotalVisibleMemorySize",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "Version",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "CSName",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_OperatingSystemEventLog",
+      "fields": [
+        {
+          "field": "CategoryString",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "EventCode",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "EventIdentifier",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "LogFile",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Message",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SourceName",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "TimeGenerated",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "TimeWritten",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "Type",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "User",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_OperatingSystemPageFileSettings",
+      "fields": [
+        {
+          "field": "InitialSize",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "MaximumSize",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_OperatingSystemPowerPlan",
+      "fields": [
+        {
+          "field": "ElementName",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_OperatingSystemServices",
+      "fields": [
+        {
+          "field": "Caption",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Description",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "PathName",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "ServiceType",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "StartMode",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "StartName",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "State",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Status",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_Oracle_Objects",
+      "fields": [
+        {
+          "field": "Schema",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Object_Name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "CreateDate",
+          "type": "datetime2",
+          "store": "yes"
+        },
+        {
+          "field": "Last_Upd_Date",
+          "type": "datetime2",
+          "store": "yes"
+        },
+        {
+          "field": "Status",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Object_Type",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Temporary",
+          "type": "nchar",
+          "store": "yes"
+        },
+        {
+          "field": "Generated",
+          "type": "nchar",
+          "store": "yes"
+        },
+        {
+          "field": "Secondary",
+          "type": "nchar",
+          "store": "yes"
+        },
+        {
+          "field": "Lines_Chars_Count",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IsWrapped",
+          "type": "nchar",
+          "store": "yes"
+        },
+        {
+          "field": "IsCharCount",
+          "type": "nchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_OracleDDLStatements",
+      "fields": [
+        {
+          "field": "ObjectOwner",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectType",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectDDL",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "InsertDate",
+          "type": "datetime2",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_PageFiles",
+      "fields": [
+        {
+          "field": "AllocatedBaseSize",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "CurrentUsage",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Name",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "PeakUsage",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Status",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "TempPageFile",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_Physical_Standby_Gap_Detection",
+      "fields": [
+        {
+          "field": "Warning_Message",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_Physical_Standby_Lag_Detection",
+      "fields": [
+        {
+          "field": "Warning_Message",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_PlanGuides",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "PlanGuideName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "create_date",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "modify_date",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "scope_type_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "query_text",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "scope_batch",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectType",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ScopeSchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ScopeObjectName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "PlanParameters",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "PlanHints",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_PossibleIndexProblems",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectType",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "index_id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IndexType",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "IndexName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IndexColumns",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IncludedColumns",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Filter",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_primary_key",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_unique_constraint",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_hypothetical",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_disabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "no_recompute",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "fill_factor",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "AllowPageLocks",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "AllowRowLocks",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsNotAligned",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsUnused",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "AvgSeeksPerDay",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "AvgScansPerDay",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "AvgLookupsPerDay",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "last_user_seek",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "last_user_scan",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "last_user_lookup",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "RowCnt",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "SizeMB",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "PercentCompressed",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "MaxRowSizeBytes",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_PossibleTableProblems",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "TableName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "HasClusteredIndex",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "HasPrimaryKey",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "IsVarDecimalStorage",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "ColumnCount",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IndexCount",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "RowCnt",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "TotalSizeMB",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "range_scan_count",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "row_lock_wait_count",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "row_lock_wait_in_ms",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "page_lock_wait_count",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "page_lock_wait_in_ms",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "index_lock_promotion_attempt_count",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "index_lock_promotion_count",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "PercentOfClusteredIndexOrHeapPartitionsCompressed",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "PercentOfNonClusteredIndexPartitionsCompressed",
+          "type": "tinyint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_PossiblyBadCode",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectType",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "HasSelectStar",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "HasNonAnsiOuterJoin",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "HasGoto",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_Processors",
+      "fields": [
+        {
+          "field": "Architecture",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "Availability",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "Caption",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "CpuStatus",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "CurrentClockSpeed",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "CurrentVoltage",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "DataWidth",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "DeviceID",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "L2CacheSize",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "L3CacheSize",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Manufacturer",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "MaxClockSpeed",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "NumberOfCores",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "NumberOfLogicalProcessors",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Status",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_QueryResourceSemaphores",
+      "fields": [
+        {
+          "field": "pool_id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "resource_semaphore_id",
+          "type": "smallint",
+          "store": "yes"
+        },
+        {
+          "field": "target_memory_kb",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "max_target_memory_kb",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "total_memory_kb",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "available_memory_kb",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "granted_memory_kb",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "used_memory_kb",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "grantee_count",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "waiter_count",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "timeout_error_count",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "forced_grant_count",
+          "type": "bigint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_ResourceUsageBySQLDatabase",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "CPUUsage",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "PlanCacheMemorySizeMB",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "BufferPoolMemorySizeMB",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "TotalMemorySizeMB",
+          "type": "bigint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_RMAN_Archive_Log_Backup_Check",
+      "fields": [
+        {
+          "field": "Warning_Message",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_RMAN_Full_DB_Backup_Check",
+      "fields": [
+        {
+          "field": "Warning_Message",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_ServerMachineDetails",
+      "fields": [
+        {
+          "field": "AutomaticManagedPagefile",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "Domain",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "DomainRole",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "HypervisorPresent",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "Manufacturer",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Model",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "NumberOfLogicalProcessors",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "NumberOfProcessors",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "OEMStringArray",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Workgroup",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_ServerRoles",
+      "fields": [
+        {
+          "field": "ID",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Name",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "ParentID",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SessionCounts",
+      "fields": [
+        {
+          "field": "Inst_ID",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Active",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Killed",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Total",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "db_max_sessions",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "pct_used",
+          "type": "numeric",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SimilarIndexes",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "TableName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IndexID",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "IndexType",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "IndexName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IndexColumns",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IncludedColumns",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IndexFilter",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SimilarIndexID",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "SimilarIndexType",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "SimilarIndexName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SimilarIndexColumns",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SimilarIndexIncludedColumns",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SolarisBase",
+      "fields": [
+        {
+          "field": "Column1",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Column4",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "Column5",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Column6",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SolarisDisks",
+      "fields": [
+        {
+          "field": "NAME",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "SIZE",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "ALLOC",
+          "type": "varchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SolarisDiskStats",
+      "fields": [
+        {
+          "field": "device",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "r/s",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "w/s",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "kr/s",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "kw/s",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "wait",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "actv",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "svc_t",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "%w",
+          "type": "decimal",
+          "store": "yes"
+        },
+        {
+          "field": "%b",
+          "type": "decimal",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SolarisMemoryStats",
+      "fields": [
+        {
+          "field": "swap",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "free",
+          "type": "bigint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SolarisProcessors",
+      "fields": [
+        {
+          "field": "Column1",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "Column2",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SolarisProcessorStats",
+      "fields": [
+        {
+          "field": "Column1",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "Column2",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "Column3",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "Column4",
+          "type": "bigint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SolarisServerMemory",
+      "fields": [
+        {
+          "field": "Column1",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLAgentErrorLog",
+      "fields": [
+        {
+          "field": "FirstErrorDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "LastErrorDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "ErrorCount",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "ErrorLevel",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "ErrorMessage",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLAgentJobs",
+      "fields": [
+        {
+          "field": "JobName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Category",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Schedules",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "StepID",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "StepName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "StepSubSystem",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "StepDatabase",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "StartStepID",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "LastRunDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "MinRunDuration",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "AvgRunDuration",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "MaxRunDuration",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "MaxInstanceID",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "LastStatus",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "OwnerLogin",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IsEnabled",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "HasSchedules",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLAvailabilityGroupClusterMembers",
+      "fields": [
+        {
+          "field": "cluster_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "member_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "member_state",
+          "type": "tinyint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLAvailabilityGroupClusters",
+      "fields": [
+        {
+          "field": "cluster_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "quorum_type",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "quorum_type_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "quorum_state",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "quorum_state_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLAvailabilityGroupListeners",
+      "fields": [
+        {
+          "field": "group_id",
+          "type": "uniqueidentifier",
+          "store": "yes"
+        },
+        {
+          "field": "listener_id",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "dns_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IPAddresses",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Port",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLAvailabilityGroupReplicaHealthStatuses",
+      "fields": [
+        {
+          "field": "group_id",
+          "type": "uniqueidentifier",
+          "store": "yes"
+        },
+        {
+          "field": "name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "replica_id",
+          "type": "uniqueidentifier",
+          "store": "yes"
+        },
+        {
+          "field": "role",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "operational_state",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "operational_state_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "connected_state",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "connected_state_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "recovery_health",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "recovery_health_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "last_connect_error_number",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "last_connect_error_description",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "last_connect_error_timestamp",
+          "type": "datetime",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLAvailabilityGroupReplicas",
+      "fields": [
+        {
+          "field": "group_id",
+          "type": "uniqueidentifier",
+          "store": "yes"
+        },
+        {
+          "field": "name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "failure_condition_level",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "health_check_timeout",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "automated_backup_preference",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "automated_backup_preference_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "replica_id",
+          "type": "uniqueidentifier",
+          "store": "yes"
+        },
+        {
+          "field": "replica_server_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "endpoint_url",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "availability_mode",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "availability_mode_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "failover_mode",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "failover_mode_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "primary_role_allow_connections",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "primary_role_allow_connections_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "secondary_role_allow_connections",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "secondary_role_allow_connections_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "create_date",
+          "type": "datetime",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLAvailabilityGroupReplicatedDatabases",
+      "fields": [
+        {
+          "field": "group_id",
+          "type": "uniqueidentifier",
+          "store": "yes"
+        },
+        {
+          "field": "replica_id",
+          "type": "uniqueidentifier",
+          "store": "yes"
+        },
+        {
+          "field": "database_name",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "synchronization_state_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_commit_participant",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "synchronization_health_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "database_state_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_suspended",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "suspend_reason_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_failover_ready",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_pending_secondary_suspend",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_database_joined",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "SecondsSinceLastSendTime",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "SecondsSinceLastReceiveTime",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "SecondsSinceLastHardenTime",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "SecondsSinceLastRedoTime",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "SecondsSinceLastCommitTime",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "log_send_queue_size",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "log_send_rate",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "redo_queue_size",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "redo_rate",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "filestream_send_rate",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "low_water_mark_for_ghosts",
+          "type": "bigint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLDatabaseTopTables",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "TableName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "NumberOfRows",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "SizeMB",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "NumberOfPartitions",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "PrecentCompressed",
+          "type": "tinyint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLErrorLog",
+      "fields": [
+        {
+          "field": "FirstErrorDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "LastErrorDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "ErrorCount",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "ProcessInfo",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "ErrorMessage",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLHostingServers",
+      "fields": [
+        {
+          "field": "MachineName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ServerRole",
+          "type": "tinyint",
+          "store": "yes"
+        },
+        {
+          "field": "IsClusterNode",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "HostOS",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLInstanceCPUUtilization",
+      "fields": [
+        {
+          "field": "CPU",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLOSSchedulerNodes",
+      "fields": [
+        {
+          "field": "node_id",
+          "type": "smallint",
+          "store": "yes"
+        },
+        {
+          "field": "node_state_desc",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "memory_node_id",
+          "type": "smallint",
+          "store": "yes"
+        },
+        {
+          "field": "cpu_affinity_mask",
+          "type": "bigint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLOSSchedulers",
+      "fields": [
+        {
+          "field": "parent_node_id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "scheduler_id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "cpu_id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "status",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "is_online",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "is_idle",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "preemptive_switches_count",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "context_switches_count",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "idle_switches_count",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "current_tasks_count",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "runnable_tasks_count",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "current_workers_count",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "active_workers_count",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "work_queue_count",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "pending_disk_io_count",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "load_factor",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "failed_to_create_worker",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLRunningProcesses",
+      "fields": [
+        {
+          "field": "SessionID",
+          "type": "smallint",
+          "store": "yes"
+        },
+        {
+          "field": "NumberOfThreads",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "StartTime",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "WaitType",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "WaitTime",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "BlockedBySessionID",
+          "type": "smallint",
+          "store": "yes"
+        },
+        {
+          "field": "SQLStatement",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "CPUTime",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "LogicalReads",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "HostName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "LoginName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ProgramName",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLSharedClusterDrives",
+      "fields": [
+        {
+          "field": "DriveName",
+          "type": "nchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLTopQueries",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SQLStatement",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "AverageExecutionsPerDay",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "AverageReadsPerDay",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "AverageCPUMilliPerDay",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "AverageDurationMilliPerDay",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "AverageReadsPerExecution",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "AverageCPUMilliPerExecution",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "AverageDurationMilliPerExecution",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "RankByCPU",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "RankByReads",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "ImplicitlyConvertedColumns",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "LookupCount",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "ScalarFunctionsUsed",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "RecommendedIndexes",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_SQLWaits",
+      "fields": [
+        {
+          "field": "wait_type",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "waiting_tasks_count",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "wait_time_sec",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "signal_wait_time_sec",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "LastRestartDate",
+          "type": "datetime",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_StaleStatistics",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectType",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "stats_id",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "StatisticsName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IsIndex",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "rowcnt",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "auto_created",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "user_created",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "no_recompute",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "has_filter",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "filter_definition",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "StatisticsUpdateDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "rowmodctr",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_Standby_Database_Check",
+      "fields": [
+        {
+          "field": "Warning_Message",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_TablespacesInformation",
+      "fields": [
+        {
+          "field": "TablespaceName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Status",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Contents",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SizeMB",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "FreeSpaceMB",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "UsedSpaceMB",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "PercentFreeMB",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "PercentUsed",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "MaxSizeMB",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "UsedMaxSize",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_TransactionalReplicationCheckTracerTokens",
+      "fields": [
+        {
+          "field": "TokenUID",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "distributor_latency",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "subscriber",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "subscriber_db",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "subscriber_latency",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "overall_latency",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "is_deleted",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_TransactionalReplications",
+      "fields": [
+        {
+          "field": "Publisher",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Publication",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "PublisherDB",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "Subscriber",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SubscriberDB",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "DistributionDatabase",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SubscriptionType",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "DistributionAgentID",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "LastLogReaderErrorDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "LogReaderError",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "LastDistributionErrorDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "DistributionError",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "LastSnapshotErrorDate",
+          "type": "datetime",
+          "store": "yes"
+        },
+        {
+          "field": "SnapshotError",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "LogReaderStatus",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "DistributionAgentStatus",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "SnapshotAgentStatus",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "PendingCommandsCount",
+          "type": "bigint",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_TransactionalReplicationSendTracerTokens",
+      "fields": [
+        {
+          "field": "PubID",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "TokenID",
+          "type": "int",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_UntrustedConstraints",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "TableName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ConstraintType",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ConstraintName",
+          "type": "nvarchar",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_UserObjectsInSystemDatabases",
+      "fields": [
+        {
+          "field": "DatabaseName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectType",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "SchemaName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "ObjectName",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "IsStartupProcedure",
+          "type": "bit",
+          "store": "yes"
+        }
+      ]
+    },
+    {
+      "doc": "Tests.VW_TST_WindowsVolumes",
+      "fields": [
+        {
+          "field": "BlockSize",
+          "type": "int",
+          "store": "yes"
+        },
+        {
+          "field": "Capacity",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "Compressed",
+          "type": "bit",
+          "store": "yes"
+        },
+        {
+          "field": "Caption",
+          "type": "nvarchar",
+          "store": "yes"
+        },
+        {
+          "field": "FileSystem",
+          "type": "varchar",
+          "store": "yes"
+        },
+        {
+          "field": "SerialNumber",
+          "type": "bigint",
+          "store": "yes"
+        },
+        {
+          "field": "Size",
+          "type": "bigint",
+          "store": "yes"
+        }
+      ]
+    }
+  ]
+}
