@@ -1,0 +1,1 @@
+It is an example of a repository built over the Lucene engine. The task is still in progress and the next step is to make com.dbbest.dbmsys.rep.lucene.repository.query.Expressions return results. These result should replace com.dbbest.dbmsys.rep.lucene.object.InventoryReport so that we can build future overall results dynamically on client demands.
